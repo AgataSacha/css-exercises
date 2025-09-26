@@ -5,10 +5,26 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   width: 600px;
+}
+
+/* remove bullet points from <ul> */
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;  /*remove underline from link */
+  color: gray;
 }
 
 button {
@@ -24,3 +40,32 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button {
+  padding: 8px;
+  margin-top: 10px;
+}
+
+
+
